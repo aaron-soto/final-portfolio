@@ -21,6 +21,19 @@
 		font-size: 14px !important;
 		width: 100vw;
 	}
+
+	.tutorial-content p,
+	.tutorial-content h2,
+	.tutorial-content h1,
+	.tutorial-content .colored-span,
+	.tutorial-content nav {
+		padding-left: 12px;
+	}
+
+	.tutorial-content {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 /* On Tablets */
