@@ -177,6 +177,9 @@ ol.breadcrumb {
 	color: #f1f1f1;
 	line-height: 16px;
 }
+.info-banner small {
+	max-width: 80vw;
+}
 .card-tutorial {
 	border-left: 5px solid #d44242 !important;
 }
