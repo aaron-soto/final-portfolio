@@ -1,0 +1,19 @@
+@font-face {
+	font-family: Avenir;
+	src: url('../fonts/AvenirLTStd-Book.otf') format('opentype');
+}
+@font-face {
+	font-family: Avenir;
+	src: url('../fonts/AvenirLTStd-Black.otf') format('opentype');
+	font-weight: bold;
+}
+@font-face {
+	font-family: Avenir;
+	src: url('../fonts/AvenirLTStd-Roman.otf') format('opentype');
+	font-weight: lighter;
+}
+@font-face {
+	font-family: myriad;
+	src: url('../fonts/MYRIADPRO-REGULAR.woff') format('opentype');
+	font-weight: lighter;
+}

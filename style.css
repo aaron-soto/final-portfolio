@@ -1,0 +1,174 @@
+body {
+	color: #545454;
+	font-family: myriad;
+	font-size: 16px;
+	letter-spacing: 0.3px;
+	line-height: 28px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: #545454;
+	font-family: Avenir;
+	font-weight: lighter;
+}
+
+a p,
+h2.section-header {
+	color: #545454;
+}
+
+a {
+	text-decoration: none;
+}
+
+.scrollspy-list {
+	list-style-type: none;
+}
+
+.scrollspy-link {
+	color: #545454;
+	text-decoration: none;
+	margin-top: 12px;
+}
+.scrollspy-link:hover,
+.scrollspy-link.active,
+.colored-span,
+a span,
+.share-links a:hover,
+a:hover {
+	color: #d44242 !important;
+}
+
+p a:hover {
+	text-decoration: underline;
+}
+
+a {
+	color: #4273d4;
+}
+
+.card {
+	border-radius: 3px;
+}
+
+.card-secondary {
+	background-color: #f9f9f9;
+	border: none;
+}
+.main-me-img {
+	max-height: 300px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.btn {
+	border-radius: 0;
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	color: #545454;
+}
+.btn:hover {
+	background-color: #e6e6e6;
+	border: 1px solid #e6e6e6;
+	color: #d44242;
+}
+
+.container {
+	width: 80%;
+	max-width: 1080px;
+	margin: auto;
+}
+
+.container-content {
+	max-width: 670px;
+	margin: 0 auto;
+}
+
+blockquote {
+	border-left: 5px solid #8338ec;
+	color: #545454;
+	margin: 1em 10px;
+	padding: 1rem 2rem;
+	line-height: 1.8rem;
+	font-size: 18px;
+	quotes: '\201C''\201D''\2018''\2019';
+}
+blockquote p {
+	display: inline;
+}
+
+.scrollspy-example-collapsible {
+	position: relative;
+	height: 200px;
+	overflow: auto;
+}
+
+#character-canvas {
+	z-index: 9999;
+	position: fixed;
+	pointer-events: none;
+	inset: 0;
+	background-color: transparent;
+}
+
+/* Tutorial Page */
+.share-links a,
+.share-links a:visited {
+	color: #545454;
+	text-decoration: none;
+}
+
+.navbar {
+	border-bottom: 5px solid #e4e4e4;
+}
+
+.simple-list-example-scrollspy h6 {
+	color: #ababab;
+}
+
+.scrollspy-list > li {
+	margin-top: 8px;
+}
+
+.toolbar {
+	margin-top: 0.5em;
+	top: 0 !important;
+}
+.copy-to-clipboard-button {
+	background-color: #d44242 !important;
+	margin-right: 15px;
+	margin-top: 0.5em !important;
+	border-radius: 0 !important;
+	padding: 5px 10px !important;
+}
+.copy-to-clipboard-button span {
+	content: '\F290';
+	color: #ffffff !important;
+}
+.code-toolbar {
+	margin-bottom: 20px;
+}
+
+ol.breadcrumb {
+	font-size: 14px;
+}
+
+.project-card-img {
+	max-height: 200px;
+	width: 100%;
+	object-fit: cover;
+}
+.tutorial-content iframe {
+	width: 100%;
+	height: 600px;
+}
+.badge {
+	color: white !important;
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../assets/styles/prism.css" />
+		<link rel="stylesheet" href="../assets/styles/fonts.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../assets/styles/bootstrap-overrides.css" />
+		<link rel="stylesheet" href="../assets/styles/breakpoints.css" />
+	</head>
+	<body>
+		<!-- NAV SECTION -->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container container-large">
+				<a class="navbar-brand" href="../index.html">Aaron Soto</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo02"
+					aria-controls="navbarTogglerDemo02"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="/index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="tutorial.html"
+								>Tutorial</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="about.html"
+								>About</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								data-bs-toggle="tooltip"
+								data-bs-title="Change Theme"
+								href="#"
+							>
+								<i class="bi bi-moon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="bi bi-search"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAV SECTION -->
+
+		<div class="container container-large">
+			<div class="row">
+				<div class="col-3" style="background-color: #f9f9f9">
+					<div
+						id="simple-list-example"
+						class="d-flex flex-column gap-2 simple-list-example-scrollspy ps-3 position-sticky top-0 pt-5"
+					>
+						<h6>Tutorial Navigation</h6>
+						<ul class="scrollspy-list">
+							<li>
+								<a class="scrollspy-link" href="#simple-list-item-1"
+									>Creating The Canvas</a
+								>
+							</li>
+							<li>
+								<a class="scrollspy-link" href="#simple-list-item-2"
+									>Setup the Animation Loop</a
+								>
+							</li>
+							<li>
+								<a class="scrollspy-link" href="#simple-list-item-3"
+									>Individual Particle</a
+								>
+							</li>
+							<li>
+								<a class="scrollspy-link" href="#simple-list-item-4"
+									>Updating a Particle</a
+								>
+							</li>
+							<li>
+								<a class="scrollspy-link" href="#simple-list-item-4"
+									>Spawn X Amount of Particles</a
+								>
+							</li>
+							<li>
+								<a class="scrollspy-link" href="#simple-list-item-4"
+									>Final Demo</a
+								>
+							</li>
+							<li>
+								<a class="scrollspy-link" href="#simple-list-item-5">Summary</a>
+							</li>
+						</ul>
+						<div class="share-links d-flex flex-column mt-5">
+							<h6>Share to</h6>
+							<a
+								href="https://twitter.com/share?url=https://aaronsoto.io"
+								target="_blank"
+								>Twitter</a
+							>
+							<a
+								href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A%2F%2Faaronsoto.io"
+								target="_blank"
+								>Facebook</a
+							>
+
+							<a class="mt-3" href="#">View on Github</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-9">
+					<div
+						data-bs-spy="scroll"
+						data-bs-target="#simple-list-example"
+						data-bs-offset="0"
+						data-bs-smooth-scroll="true"
+						class="scrollspy-example p-5"
+						tabindex="0"
+					>
+						<span class="colored-span">Oct 2022</span>
+						<h1 class="mb-5">Creating a Confetti Effect In Javascript</h1>
+						<h2 class="mt-5" id="simple-list-item-1">Creating The Canvas</h2>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+							aspernatur enim soluta non, repudiandae temporibus dolorem
+							adipisci ut maiores magni placeat, beatae quia excepturi error
+							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
+							quisquam optio delectus vero reiciendis dolores doloremque, minus
+							cumque officia soluta pariatur quas natus! Magnam aperiam quos
+							earum at numquam pariatur deleniti sit rerum, a laudantium!
+						</p>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+							aspernatur enim soluta non, repudiandae temporibus dolorem
+							adipisci ut maiores magni placeat, beatae quia excepturi error
+							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
+							quisquam optio delectus vero reiciendis dolores doloremque, minus
+							cumque officia soluta pariatur quas natus! Magnam aperiam quos
+							earum at numquam pariatur deleniti sit rerum, a laudantium!
+						</p>
+						<h2 class="mt-5" id="simple-list-item-2">
+							Setup The Animation Loop
+						</h2>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+							aspernatur enim soluta non, repudiandae temporibus dolorem
+							adipisci ut maiores magni placeat, beatae quia excepturi error
+							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
+							quisquam optio delectus vero reiciendis dolores doloremque, minus
+							cumque officia soluta pariatur quas natus! Magnam aperiam quos
+							earum at numquam pariatur deleniti sit rerum, a laudantium!
+						</p>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+							aspernatur enim soluta non, repudiandae temporibus dolorem
+							adipisci ut maiores magni placeat, beatae quia excepturi error
+							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
+							quisquam optio delectus vero reiciendis dolores doloremque, minus
+							cumque officia soluta pariatur quas natus! Magnam aperiam quos
+							earum at numquam pariatur deleniti sit rerum, a laudantium!
+						</p>
+						<h2 class="mt-5" id="simple-list-item-3">Individual Particle</h2>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+							aspernatur enim soluta non, repudiandae temporibus dolorem
+							adipisci ut maiores magni placeat, beatae quia excepturi error
+							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
+							quisquam optio delectus vero reiciendis dolores doloremque, minus
+							cumque officia soluta pariatur quas natus! Magnam aperiam quos
+							earum at numquam pariatur deleniti sit rerum, a laudantium!
+						</p>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+							aspernatur enim soluta non, repudiandae temporibus dolorem
+							adipisci ut maiores magni placeat, beatae quia excepturi error
+							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
+							quisquam optio delectus vero reiciendis dolores doloremque, minus
+							cumque officia soluta pariatur quas natus! Magnam aperiam quos
+							earum at numquam pariatur deleniti sit rerum, a laudantium!
+						</p>
+						<h2 class="mt-5" id="simple-list-item-4">Updating a Particles</h2>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+							aspernatur enim soluta non, repudiandae temporibus dolorem
+							adipisci ut maiores magni placeat, beatae quia excepturi error
+							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
+							quisquam optio delectus vero reiciendis dolores doloremque, minus
+							cumque officia soluta pariatur quas natus! Magnam aperiam quos
+							earum at numquam pariatur deleniti sit rerum, a laudantium!
+						</p>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+							aspernatur enim soluta non, repudiandae temporibus dolorem
+							adipisci ut maiores magni placeat, beatae quia excepturi error
+							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
+							quisquam optio delectus vero reiciendis dolores doloremque, minus
+							cumque officia soluta pariatur quas natus! Magnam aperiam quos
+							earum at numquam pariatur deleniti sit rerum, a laudantium!
+						</p>
+						<h2 class="mt-5" id="simple-list-item-5">
+							Spawn X Amount of Particles
+						</h2>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+							aspernatur enim soluta non, repudiandae temporibus dolorem
+							adipisci ut maiores magni placeat, beatae quia excepturi error
+							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
+							quisquam optio delectus vero reiciendis dolores doloremque, minus
+							cumque officia soluta pariatur quas natus! Magnam aperiam quos
+							earum at numquam pariatur deleniti sit rerum, a laudantium!
+						</p>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+							aspernatur enim soluta non, repudiandae temporibus dolorem
+							adipisci ut maiores magni placeat, beatae quia excepturi error
+							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
+							quisquam optio delectus vero reiciendis dolores doloremque, minus
+							cumque officia soluta pariatur quas natus! Magnam aperiam quos
+							earum at numquam pariatur deleniti sit rerum, a laudantium!
+						</p>
+						<h2 class="mt-5" id="simple-list-item-5">Summary</h2>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
+							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
+							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
+							est fugiat atque labore vero accusamus, necessitatibus impedit
+							voluptatibus illo.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER SECTION -->
+
+		<footer class="bg-light text-center">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0">
+				<!-- Section: Form -->
+				<section class="">
+					<form action="">
+						<!--Grid row-->
+						<div class="row d-flex justify-content-center">
+							<!--Grid column-->
+							<div class="col-auto">
+								<p class="pt-2">
+									<strong>Sign up for our newsletter</strong>
+								</p>
+							</div>
+							<!--Grid column-->
+
+							<!--Grid column-->
+							<div class="col-md-5 col-12">
+								<!-- Email input -->
+								<div class="form-outline mb-4">
+									<input
+										type="email"
+										id="form5Example27"
+										class="form-control"
+									/>
+									<label class="form-label" for="form5Example27"
+										>Email address</label
+									>
+								</div>
+							</div>
+							<!--Grid column-->
+
+							<!--Grid column-->
+							<div class="col-auto">
+								<!-- Submit button -->
+								<button type="submit" class="btn btn-primary mb-4">
+									Subscribe
+								</button>
+							</div>
+							<!--Grid column-->
+						</div>
+						<!--Grid row-->
+					</form>
+				</section>
+				<!-- Section: Form -->
+			</div>
+			<!-- Grid container -->
+
+			<div class="container container-medium pb-4">
+				<span>Local Time in Arizona:</span>
+				<span id="clock"></span>
+			</div>
+
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+				© 2022 Copyright:
+				<a class="text-dark" href="https://aaronsoto.io">aaronsoto.io</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
+		<!-- END FOOTER SECTION -->
+
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>

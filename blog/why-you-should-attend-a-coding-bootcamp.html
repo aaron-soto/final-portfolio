@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../assets/styles/prism.css" />
+		<link rel="stylesheet" href="../assets/styles/fonts.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../assets/styles/bootstrap-overrides.css" />
+		<link rel="stylesheet" href="../assets/styles/breakpoints.css" />
+	</head>
+	<body>
+		<!-- NAV SECTION -->
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container container-small">
+				<a class="navbar-brand" href="../index.html">Aaron Soto</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo02"
+					aria-controls="navbarTogglerDemo02"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="/index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="tutorial.html"
+								>Tutorial</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="about.html"
+								>About</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								data-bs-toggle="tooltip"
+								data-bs-title="Change Theme"
+								href="#"
+							>
+								<i class="bi bi-moon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="bi bi-search"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAV SECTION -->
+
+		<div class="container container-small my-5">
+			<img
+				src="./assets/images/IMG_2758 (1).jpg"
+				style="max-height: 400px; object-fit: contain"
+				alt=""
+				class="mx-auto"
+			/>
+		</div>
+
+		<div class="container container-small my-5">
+			<div class="row">
+				<span class="colored-span">July 18, 2021</span>
+				<h1>Why You Should Attend A Coding Bootcamp</h1>
+				<p class="mb-5">
+					Eveyone has their own setup that they like to use for react apps and
+					there is no required structure that you have to use for every project.
+					That being the case, there is alot of room for thinking about what is
+					or could be the best setup to use. In the end it comes down to what
+					you feel most comfortable with. I will walk you through how I start
+					every project and you can choose to do the same or alter it to your
+					liking.
+				</p>
+
+				<h2>Getting Started</h2>
+
+				<p>
+					We will get started using facebooks' `create-react-app`. I find it
+					wasy to use this tool to get all of the grunt work out of the way and
+					then alter what is created to our liking.
+				</p>
+
+				<p>
+					Create a folder in the directory of your choice and name that folder
+					what you want your app name to be. Open that folder in vscode. I like
+					to right click the folder or inside the folder and click `Open with
+					Code`.
+				</p>
+
+				<p>
+					click `Terminal` in the toolbar then `New Terminal`. In the new
+					terminal run
+				</p>
+
+				<code>npx create-react-app ./</code>
+
+				<p>
+					Running `create-react-app` with `./` creates the app in the curent
+					folder. I like to do this so I never have to think about where the
+					folder will end up. Just like any react video you have watched before,
+					Ill see you back here when its done installing the app!
+				</p>
+
+				<p>
+					Above is what you should have once it is done installing. I like to go
+					ahead and at this point strip this folder structure down to its bare
+					bones.
+				</p>
+
+				<p>
+					Since in this example I will be making a small react app with a few
+					small components, almost everything is not needed.
+				</p>
+
+				<h2>What To Delete</h2>
+
+				<p>I start by removing the following files</p>
+
+				<ul>
+					<li>favicon.ico</li>
+					<li>logo192.png</li>
+					<li>logo512.png</li>
+					<li>manifest.json</li>
+					<li>robots.txt</li>
+
+					<li>App.test.js</li>
+					<li>logo.svg</li>
+					<li>reportWebVitals.js</li>
+					<li>setupTests.js</li>
+				</ul>
+
+				<p>Index.js should now look like:</p>
+
+				<pre>
+                    <code class="language-js">
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+
+ReactDOM.render(
+    &lt;React.StrictMode&gt;
+        &lt;App /&gt;
+    &lt;/React.StrictMode&gt;,
+    document.getElementById("root")
+);
+                    </code>
+                </pre>
+
+				<p>App.js should now look like:</p>
+				<pre>
+                    <code class="language-js">
+import "./App.css";
+
+function App() {
+    return (
+        &lt;div className='App'&gt;
+            &lt;h2&gt;My React App&lt;/h2&gt;
+        &lt;/div&gt;
+    );
+}
+                    </code>
+                </pre>
+
+				<p>Index.html should now look like:</p>
+				<pre>
+                    <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8" /&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+        &lt;meta
+            name="description"
+            content="Web site created using create-react-app"
+        /&gt;
+        &lt;title&gt;My App&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+        &lt;div id="root"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+
+				<p>
+					Now that you have updated the files you should be able to start the
+					application if you haven't already done so. Do this by running
+				</p>
+				<code>npm start</code>
+
+				<h2>That's it!</h2>
+				<p>
+					With that that is a basic boilerplate for create-react-app that I like
+					to do everytime I create a new application. This type of project setup
+					might not be ideal for production level apps but this is a good
+					starting point for any quick projects you may be creating when
+					learning react and or experimenting with things. I hope you were able
+					to pick up something to speed up your workflow when creating new apps.
+					Again, feel free to alter any code here you would like. Thank you for
+					making it this far! Happy learning!
+				</p>
+			</div>
+		</div>
+
+		<div class="container container-small">
+			<h3>Similar Posts</h3>
+			<div class="row d-flex justify-content-between">
+				<div class="col-md-6">
+					<a href="post.html">
+						<div class="card">
+							<div class="card-body">
+								<span class="colored-span">2021-07-15</span>
+								<h5 class="card-title mt-2 fw-bold">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+									omnis ipsa! Sint.
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="post.html">
+						<div class="card">
+							<div class="card-body">
+								<span class="colored-span">September 05, 2022</span>
+								<h5 class="card-title mt-2 fw-bold">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+									omnis ipsa! Sint.
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER SECTION -->
+
+		<footer class="bg-light text-center mt-5">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0">
+				<!-- Section: Form -->
+				<section class="">
+					<form action="">
+						<!--Grid row-->
+						<div class="row d-flex justify-content-center">
+							<!--Grid column-->
+							<div class="col-auto">
+								<p class="pt-2">
+									<strong>Sign up for our newsletter</strong>
+								</p>
+							</div>
+							<!--Grid column-->
+
+							<!--Grid column-->
+							<div class="col-md-5 col-12">
+								<!-- Email input -->
+								<div class="form-outline mb-4">
+									<input
+										type="email"
+										id="form5Example27"
+										class="form-control"
+									/>
+									<label class="form-label" for="form5Example27"
+										>Email address</label
+									>
+								</div>
+							</div>
+							<!--Grid column-->
+
+							<!--Grid column-->
+							<div class="col-auto">
+								<!-- Submit button -->
+								<button type="submit" class="btn btn-primary mb-4">
+									Subscribe
+								</button>
+							</div>
+							<!--Grid column-->
+						</div>
+						<!--Grid row-->
+					</form>
+				</section>
+				<!-- Section: Form -->
+			</div>
+			<!-- Grid container -->
+
+			<div class="container container-medium pb-4">
+				<span>Local Time in Arizona:</span>
+				<span id="clock"></span>
+			</div>
+
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+				© 2022 Copyright:
+				<a class="text-dark" href="https://aaronsoto.io">aaronsoto.io</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
+		<!-- END FOOTER SECTION -->
+
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+		<script src="../assets/js/prism.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
