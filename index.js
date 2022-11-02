@@ -6,13 +6,20 @@ const tooltipList = [...tooltipTriggerList].map(
 	(tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 );
 
-// set time in footer
-// var clockElement = document.getElementById('clock');
+let lastCommitDateText = document.getElementById('last-commit-date');
 
-// function clock() {
-// 	var date = new Date();
+let url =
+	'https://api.github.com/repos/aaron-soto/final-portfolio/commits/master';
 
-// 	clockElement.textContent = date.toLocaleString();
-// }
-
-// setInterval(clock, 1000);
+fetch(url)
+	.then(function (response) {
+		return response.json();
+	})
+	.then(function (data) {
+		lastCommitDateText.innerHTML = moment(data.commit.committer.date).format(
+			'MMM Do YYYY'
+		);
+	})
+	.catch(function () {
+		console.log('Booo');
+	});
