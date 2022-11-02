@@ -21,8 +21,6 @@
 		<link rel="stylesheet" href="./assets/styles/breakpoints.css" />
 	</head>
 	<body>
-		<!-- CANVAS CHARACTER -->
-		<canvas id="character-canvas"></canvas>
 		<!-- NAV SECTION -->
 		<nav class="navbar navbar-expand-lg bg-light">
 			<div class="container container-medium">
@@ -88,6 +86,18 @@
 			</div>
 		</nav>
 		<!-- END NAV SECTION -->
+		<div class="info-banner">
+			<div
+				class="container d-flex align-items-center justify-content-center py-2"
+			>
+				<i class="bi bi-exclamation-diamond"></i>
+				<small class="px-5 text-center"
+					>Some links on this site will lead nowhere at the moment as this site
+					is still in development.</small
+				>
+				<i class="bi bi-exclamation-diamond"></i>
+			</div>
+		</div>
 
 		<div class="container container-medium my-5">
 			<div class="row">
@@ -116,7 +126,7 @@
 
 		<!-- POSTS SECTION -->
 		<div class="container container-medium my-5">
-			<div class="row mb-2 d-flex align-items-center">
+			<div class="row mb-2 d-flex align-items-center px-3">
 				<h2 class="col-sm-10 section-header">Latest Posts</h2>
 				<button class="btn btn-primary col-sm-2">View All</button>
 			</div>
@@ -161,20 +171,14 @@
 
 		<!-- TUTORIALS SECTION -->
 		<div class="container container-medium mt-5">
-			<div class="row mb-2 d-flex align-items-center">
+			<div class="row mb-2 d-flex align-items-center px-3">
 				<h2 class="col-sm-10 section-header">Popular Tutorials</h2>
 				<button class="btn btn-primary col-sm-2">View All</button>
 			</div>
 			<div class="row">
 				<div class="col-sm-4 d-flex">
 					<a class="w-100" href="./tutorials/create-confetti-in-js.html">
-						<div class="card card-secondary mb-3 position-relative">
-							<span
-								class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
-							>
-								New
-								<span class="visually-hidden">New Tutorial</span>
-							</span>
+						<div class="card card-secondary mb-3">
 							<div class="card-body">
 								<small class="colored-span">September 05, 2022</small>
 								<h5 class="card-title mt-2 fw-bold">How to Make JS confetti</h5>
@@ -251,7 +255,7 @@
 
 		<!-- SIDE PROJECTS SECTION -->
 		<div class="container container-medium mt-5 mb-5">
-			<div class="row mb-2 d-flex align-items-center">
+			<div class="row mb-2 d-flex align-items-center px-3">
 				<h2 class="col-sm-10 section-header">Side Projects</h2>
 				<a href="./projects.html" class="btn btn-primary col-sm-2">View All</a>
 			</div>
