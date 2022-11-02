@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/styles/fonts.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./assets/styles/bootstrap-overrides.css" />
+		<link rel="stylesheet" href="./assets/styles/breakpoints.css" />
+	</head>
+	<body>
+		<!-- CANVAS CHARACTER -->
+		<canvas id="character-canvas"></canvas>
+		<!-- NAV SECTION -->
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container container-medium">
+				<a class="navbar-brand" href="index.html">Aaron Soto</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo02"
+					aria-controls="navbarTogglerDemo02"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="/index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="./tutorials/tutorial.html"
+								>Posts</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="./tutorials/tutorial.html"
+								>Tutorials</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="./tutorials/tutorial.html"
+								>My Side Projects</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="about.html"
+								>About</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								data-bs-toggle="tooltip"
+								data-bs-title="Change Theme"
+								href="#"
+							>
+								<i class="bi bi-moon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="bi bi-search"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAV SECTION -->
+
+		<div class="container container-medium my-5">
+			<div class="row">
+				<div class="col-md-6">
+					<h1>Hey, I'm <span class="colored-span">Aaron</span></h1>
+					<p>
+						I'm a Full Stack web developer with a passion in React. I like tech,
+						stand-up comedy, and fine woodworking.
+					</p>
+					<p>
+						Check out <a href="#">my projects</a> and
+						<a href="#">articles I've written</a> on subjects from coding, to
+						career development to my experience as an Army Ranger, or learn
+						<a href="#">more about me</a>.
+					</p>
+				</div>
+				<div class="col-md-6">
+					<img
+						src="./assets/images/me.jpg"
+						alt="Photo of me in the snow"
+						class="img-fluid main-me-img"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<!-- POSTS SECTION -->
+		<div class="container container-medium my-5">
+			<div class="row mb-2 d-flex align-items-center">
+				<h2 class="col-sm-10 section-header">Latest Posts</h2>
+				<button class="btn btn-primary col-sm-2">View All</button>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="./blog/easily-create-a-react-app.html">
+						<div class="card">
+							<div class="card-body">
+								<small class="colored-span">July 15, 2021</small>
+								<h5 class="card-title mt-2 fw-bold">
+									Easily Create a React App
+								</h5>
+								<p class="card-text">
+									I walk through my setup of a fast and easy to use setup using
+									the facebook tool create-react-app. With a few minor changes
+									it can be ready for any project.
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6">
+					<a href="./blog/why-you-should-attend-a-coding-bootcamp.html">
+						<div class="card">
+							<div class="card-body">
+								<small class="colored-span">July 18, 2021</small>
+								<h5 class="card-title mt-2 fw-bold">
+									Why You Should Attend a Coding Bootcamp
+								</h5>
+								<p class="card-text">
+									People are always asking if they should attend a coding
+									bootcamp. I had the same question until I finally did it and
+									it was no longer a question and I was glad that I had done it.
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- END POSTS SECTION -->
+
+		<!-- TUTORIALS SECTION -->
+		<div class="container container-medium mt-5">
+			<div class="row mb-2 d-flex align-items-center">
+				<h2 class="col-sm-10 section-header">Popular Tutorials</h2>
+				<button class="btn btn-primary col-sm-2">View All</button>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 d-flex">
+					<a class="w-100" href="./tutorials/tutorial.html">
+						<div class="card card-secondary mb-3">
+							<div class="card-body">
+								<small class="colored-span">September 05, 2022</small>
+								<h5 class="card-title mt-2 fw-bold">
+									HTML Canvas Event Listeners
+								</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 d-flex">
+					<a class="w-100" href="./tutorials/create-confetti-in-js.html">
+						<div class="card card-secondary mb-3">
+							<div class="card-body">
+								<small class="colored-span">September 05, 2022</small>
+								<h5 class="card-title mt-2 fw-bold">How to Make JS confetti</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 d-flex">
+					<a class="w-100" href="./tutorials/tutorial.html">
+						<div class="card card-secondary mb-3">
+							<div class="card-body">
+								<small class="colored-span">September 05, 2022</small>
+								<h5 class="card-title mt-2 fw-bold">
+									How to show an up to date time on your website
+								</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 d-flex">
+					<a class="w-100" href="./tutorials/tutorial.html">
+						<div class="card card-secondary mb-3">
+							<div class="card-body">
+								<small class="colored-span">September 05, 2022</small>
+								<h5 class="card-title mt-2 fw-bold">
+									HTML Canvas Move a Character
+								</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 d-flex">
+					<a class="w-100" href="./tutorials/tutorial.html">
+						<div class="card card-secondary mb-3">
+							<div class="card-body">
+								<small class="colored-span">September 05, 2022</small>
+								<h5 class="card-title mt-2 fw-bold">
+									Html Canvas Animation Loop
+								</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 d-flex">
+					<a class="w-100" href="./tutorials/tutorial.html">
+						<div class="card card-secondary mb-3">
+							<div class="card-body">
+								<small class="colored-span">September 05, 2022</small>
+								<h5 class="card-title mt-2 fw-bold">
+									HTML Custom Debug Feature for development
+								</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- END TUTORIALS SECTION -->
+
+		<!-- SIDE PROJECTS SECTION -->
+		<div class="container container-medium mt-5">
+			<div class="row mb-2 d-flex align-items-center">
+				<h2 class="col-sm-10 section-header">Side Projects</h2>
+				<button class="btn btn-primary col-sm-2">View All</button>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 d-flex">
+					<div class="card mb-3">
+						<div class="card-body">
+							<small class="colored-span">April 20, 2022</small>
+							<h5 class="card-title mt-2 fw-bold">
+								Canvas Interactive Rectangles
+							</h5>
+							<p>A fun interactive screen to play with your mouse cursor</p>
+						</div>
+						<div class="btn-group pb-3 px-3 gap-3" role="group">
+							<button class="btn btn-primary btn-sm">Article</button>
+							<button class="btn btn-primary btn-sm">Demo</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 d-flex">
+					<div class="card mb-3">
+						<div class="card-body">
+							<small class="colored-span">April 20, 2022</small>
+							<h5 class="card-title mt-2 fw-bold">React Hangman</h5>
+							<p>A react version of the classic game Hangman</p>
+						</div>
+						<div class="btn-group pb-3 px-3 gap-3" role="group">
+							<button class="btn btn-primary btn-sm">Article</button>
+							<button class="btn btn-primary btn-sm">Demo</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 d-flex">
+					<div class="card mb-3">
+						<div class="card-body">
+							<small class="colored-span">April 20, 2022</small>
+							<h5 class="card-title mt-2 fw-bold">Js Conffetti</h5>
+							<p>
+								I created a canvas overlay that can be put on any screen to
+								simulate a celebration
+							</p>
+						</div>
+						<div class="btn-group pb-3 px-3 gap-3" role="group">
+							<button class="btn btn-primary btn-sm">Article</button>
+							<button class="btn btn-primary btn-sm">Demo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 d-flex">
+					<div class="card mb-3">
+						<div class="card-body">
+							<small class="colored-span">April 20, 2022</small>
+							<h5 class="card-title mt-2 fw-bold">React ToDo App</h5>
+							<p>A simple react todo app for tracking tasks</p>
+						</div>
+						<div class="btn-group pb-3 px-3 gap-3" role="group">
+							<button class="btn btn-primary btn-sm">Article</button>
+							<button class="btn btn-primary btn-sm">Demo</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 d-flex">
+					<div class="card mb-3">
+						<div class="card-body">
+							<small class="colored-span">April 20, 2022</small>
+							<h5 class="card-title mt-2 fw-bold">React Pricing Component</h5>
+							<p>My front end mentor solution to a challenge</p>
+						</div>
+						<div class="btn-group pb-3 px-3 gap-3" role="group">
+							<button class="btn btn-primary btn-sm">Article</button>
+							<button class="btn btn-primary btn-sm">Demo</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 d-flex">
+					<div class="card mb-3">
+						<div class="card-body">
+							<small class="colored-span">April 20, 2022</small>
+							<h5 class="card-title mt-2 fw-bold">Ninja Gold Canvas Game</h5>
+							<p>
+								A pixel top down version of a console game I made in my coding
+								bootcamp
+							</p>
+						</div>
+						<div class="btn-group pb-3 px-3 gap-3" role="group">
+							<button class="btn btn-primary btn-sm">Article</button>
+							<button class="btn btn-primary btn-sm">Demo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END SIDE PROJECTS SECTION -->
+
+		<!-- FOOTER SECTION -->
+
+		<footer class="bg-light text-center mt-5">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0">
+				<!-- Section: Form -->
+				<section class="">
+					<form action="">
+						<!--Grid row-->
+						<div class="row d-flex justify-content-center">
+							<!--Grid column-->
+							<div class="col-auto">
+								<p class="pt-2">
+									<strong>Sign up for our newsletter</strong>
+								</p>
+							</div>
+							<!--Grid column-->
+
+							<!--Grid column-->
+							<div class="col-md-5 col-12">
+								<!-- Email input -->
+								<div class="form-outline mb-4">
+									<input
+										type="email"
+										id="form5Example27"
+										class="form-control"
+									/>
+									<label class="form-label" for="form5Example27"
+										>Email address</label
+									>
+								</div>
+							</div>
+							<!--Grid column-->
+
+							<!--Grid column-->
+							<div class="col-auto">
+								<!-- Submit button -->
+								<button type="submit" class="btn btn-primary mb-4">
+									Subscribe
+								</button>
+							</div>
+							<!--Grid column-->
+						</div>
+						<!--Grid row-->
+					</form>
+				</section>
+				<!-- Section: Form -->
+			</div>
+			<!-- Grid container -->
+
+			<div class="container container-medium pb-4">
+				<span>Local Time in Arizona:</span>
+				<span id="clock"></span>
+			</div>
+
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+				© 2022 Copyright:
+				<a class="text-dark" href="https://aaronsoto.io">aaronsoto.io</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
+		<!-- END FOOTER SECTION -->
+
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>
