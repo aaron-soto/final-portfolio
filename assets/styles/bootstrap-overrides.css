@@ -10,9 +10,16 @@
 		margin-right: 0;
 	}
 
+	.code-toolbar {
+		padding: 0;
+	}
+
+	.code-toolbar,
 	code[class*='language-'],
 	pre[class*='language-'] {
+		border-radius: 0;
 		font-size: 14px !important;
+		width: 100vw;
 	}
 }
 
