@@ -172,3 +172,6 @@ ol.breadcrumb {
 .badge {
 	color: white !important;
 }
+.navbar-toggler {
+	border-radius: 0;
+}
