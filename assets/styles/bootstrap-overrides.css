@@ -2,6 +2,7 @@
 @media (max-width: 480px) {
 	* {
 		overflow-x: hidden;
+		font-size: 1.05rem;
 	}
 
 	.container {
