@@ -9,6 +9,11 @@ body {
 	box-sizing: border-box;
 }
 
+body.isSearching {
+	overflow: hidden;
+	height: 100vh;
+}
+
 h1,
 h2,
 h3,
@@ -26,6 +31,10 @@ h2.section-header {
 
 a {
 	text-decoration: none;
+}
+a.primary {
+	color: #d44242;
+	text-decoration: underline;
 }
 
 .scrollspy-list {
@@ -182,4 +191,46 @@ ol.breadcrumb {
 }
 .card-tutorial {
 	border-left: 5px solid #d44242 !important;
+}
+
+#search-window {
+	background-color: #d7d7d7aa;
+	inset: 0;
+	position: absolute;
+	z-index: 9999999;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+#search-window.show {
+	display: flex;
+}
+
+#search-wrapper {
+	background-color: #f1f1f1;
+	display: flex;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+#search-wrapper #input-wrapper {
+	border-radius: 10px;
+	background-color: #f1f1f1;
+	padding: 1rem;
+}
+#input-wrapper i.bi-search {
+	margin-right: 10px;
+}
+#input-wrapper i.bi-info-circle-fill {
+	margin-left: 10px;
+}
+#search-wrapper input {
+	background-color: #f1f1f1;
+	border: none;
+	width: 30vw;
+	outline: none;
 }

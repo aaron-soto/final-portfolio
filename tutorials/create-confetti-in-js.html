@@ -206,7 +206,9 @@
 
 						<span class="colored-span">Oct 2022</span>
 						<h1 class="mb-5">Creating a Confetti Effect In Javascript</h1>
-						<h2 class="mt-5" id="simple-list-item-1">Creating The Canvas</h2>
+						<h2 class="col-sm-10" id="simple-list-item-1">
+							Creating The Canvas
+						</h2>
 						<p>
 							Creating the canvas in its simplest form can be done by adding the
 							<code>&lt;canvas/&gt;</code>
@@ -259,61 +261,24 @@ canvas.height = window.innerHeight;</code></pre>
 						</p>
 						<pre><code class="language-js">const animate = () => {
 	requestAnimationFrame(animate);
+
+	c.clearRect(0, 0, canvas.width, canvas.height);
+	c.fillRect(0, 0, 100, 100)
+
 }
 
 animate();</code></pre>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
-							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
-							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
-							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
-							est fugiat atque labore vero accusamus, necessitatibus impedit
-							voluptatibus illo.
-						</p>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-							aspernatur enim soluta non, repudiandae temporibus dolorem
-							adipisci ut maiores magni placeat, beatae quia excepturi error
-							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
-							quisquam optio delectus vero reiciendis dolores doloremque, minus
-							cumque officia soluta pariatur quas natus! Magnam aperiam quos
-							earum at numquam pariatur deleniti sit rerum, a laudantium!
-						</p>
+
 						<h2 class="mt-5" id="simple-list-item-3">Individual Particle</h2>
 						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
-							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
-							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
-							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
-							est fugiat atque labore vero accusamus, necessitatibus impedit
-							voluptatibus illo.
+							It would be way to much code to draw all the individual particles.
+							Thankfully OOP (Object Oriented Programming) is our friend and
+							will make this code a whole lot easier to write.
 						</p>
 						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-							aspernatur enim soluta non, repudiandae temporibus dolorem
-							adipisci ut maiores magni placeat, beatae quia excepturi error
-							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
-							quisquam optio delectus vero reiciendis dolores doloremque, minus
-							cumque officia soluta pariatur quas natus! Magnam aperiam quos
-							earum at numquam pariatur deleniti sit rerum, a laudantium!
+							Before we create the particle class it will be a good idea to 
 						</p>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
-							aspernatur voluptates cumque quibusdam optio esse impedit maiores,
-							ea magnam quas facilis dolor commodi saepe voluptas laudantium!
-							Natus eveniet dicta illum, ipsum optio obcaecati quos dignissimos
-							est fugiat atque labore vero accusamus, necessitatibus impedit
-							voluptatibus illo.
-						</p>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-							aspernatur enim soluta non, repudiandae temporibus dolorem
-							adipisci ut maiores magni placeat, beatae quia excepturi error
-							debitis veniam? Recusandae illo dolorum voluptates hic et repellat
-							quisquam optio delectus vero reiciendis dolores doloremque, minus
-							cumque officia soluta pariatur quas natus! Magnam aperiam quos
-							earum at numquam pariatur deleniti sit rerum, a laudantium!
-						</p>
+
 						<h2 class="mt-5" id="simple-list-item-4">Updating a Particles</h2>
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,

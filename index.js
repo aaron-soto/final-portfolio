@@ -7,11 +7,10 @@ const tooltipList = [...tooltipTriggerList].map(
 );
 
 let lastCommitDateText = document.getElementById('last-commit-date');
-
-let url =
+let portfolioRepoUrl =
 	'https://api.github.com/repos/aaron-soto/final-portfolio/commits/master';
 
-fetch(url)
+fetch(portfolioRepoUrl)
 	.then(function (response) {
 		return response.json();
 	})

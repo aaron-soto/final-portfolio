@@ -59,7 +59,8 @@
 		<link rel="stylesheet" href="./assets/styles/breakpoints.css" />
 	</head>
 	<body>
-		<!-- NAV SECTION -->
+
+		<!-- #region NAV -->
 		<nav class="navbar navbar-expand-lg bg-light">
 			<div class="container container-medium">
 				<a class="navbar-brand" href="index.html">Aaron Soto</a>
@@ -115,7 +116,7 @@
 							</a>
 						</li> -->
 						<li class="nav-item">
-							<a class="nav-link" href="#">
+							<a class="nav-link" id="search-btn">
 								<i class="bi bi-search"></i>
 							</a>
 						</li>
@@ -123,7 +124,9 @@
 				</div>
 			</div>
 		</nav>
-		<!-- END NAV SECTION -->
+		<!-- #endregion -->
+		
+		<!-- #region BANNER -->
 		<div class="info-banner">
 			<div
 				class="container d-flex align-items-center justify-content-center py-2"
@@ -136,17 +139,19 @@
 				<i class="bi bi-exclamation-diamond"></i>
 			</div>
 		</div>
+		<!-- #endregion -->
 
+		<!-- #region ABOUT -->
 		<div class="container container-medium my-5">
 			<div class="row">
 				<div class="col-md-6">
-					<h1>Hey, I'm <span class="colored-span display-6">Aaron</span></h1>
+					<h1>Hey, I'm <span class="colored-span display-6">Aaron Soto</span></h1>
 					<p>
 						I'm a Full Stack web developer with a passion in React. I like tech,
 						stand-up comedy, and fine woodworking.
 					</p>
 					<p>
-						Check out <a href="./projects.html">my side projects</a> and
+						I have created <a class="primary" href="https://ayezeewebdesigns.com">AyeZeeWebDesigns</a> which is a company that creates custom website for local companies.  Check out <a href="./projects.html">my side projects</a> and
 						<a href="./404.html">articles I've written</a> on subjects from
 						coding, to career development to my experience as an Army Ranger, or
 						learn <a href="./about.html">more about me</a>.
@@ -161,8 +166,9 @@
 				</div>
 			</div>
 		</div>
+		<!-- #endregion -->
 
-		<!-- POSTS SECTION -->
+		<!-- #region POSTS -->
 		<div class="container container-medium my-5">
 			<div class="row mb-2 d-flex align-items-center px-3">
 				<h2 class="col-sm-10 section-header">Latest Posts</h2>
@@ -205,9 +211,9 @@
 				</div>
 			</div>
 		</div>
-		<!-- END POSTS SECTION -->
+		<!-- #endregion -->
 
-		<!-- TUTORIALS SECTION -->
+		<!-- #region TUTORIALS -->
 		<div class="container container-medium mt-5">
 			<div class="row mb-2 d-flex align-items-center px-3">
 				<h2 class="col-sm-10 section-header">Popular Tutorials</h2>
@@ -291,9 +297,9 @@
 				</div>
 			</div>
 		</div>
-		<!-- END TUTORIALS SECTION -->
+		<!-- #endregion -->
 
-		<!-- SIDE PROJECTS SECTION -->
+		<!-- #region PROJECTS -->
 		<div class="container container-medium mt-5 mb-5">
 			<div class="row mb-2 d-flex align-items-center px-3">
 				<h2 class="col-sm-10 section-header">Side Projects</h2>
@@ -430,13 +436,69 @@
 				</div>
 			</div>
 		</div>
-		<!-- END SIDE PROJECTS SECTION -->
+		<!-- #endregion -->
 
-		<div class="container text-center mb-5">
-			<p class="text-secondary">
+		<!-- #region FOOTER -->
+		<footer class="text-center text-white" style="background-color: #f1f1f1">
+			<div class="container pt-4">
+				<section class="mb-4">
+					<a
+						class="btn btn-link btn-floating btn-lg text-dark m-1"
+						href="#!"
+						role="button"
+						data-mdb-ripple-color="dark"
+						><i class="fab fa-facebook-f"></i
+					></a>
+					<a
+						class="btn btn-link btn-floating btn-lg text-dark m-1"
+						href="#!"
+						role="button"
+						data-mdb-ripple-color="dark"
+						><i class="fab fa-twitter"></i
+					></a>
+					<a
+						class="btn btn-link btn-floating btn-lg text-dark m-1"
+						href="#!"
+						role="button"
+						data-mdb-ripple-color="dark"
+						><i class="fab fa-google"></i
+					></a>
+
+					<a
+						class="btn btn-link btn-floating btn-lg text-dark m-1"
+						href="#!"
+						role="button"
+						data-mdb-ripple-color="dark"
+						><i class="fab fa-instagram"></i
+					></a>
+					<a
+						class="btn btn-link btn-floating btn-lg text-dark m-1"
+						href="#!"
+						role="button"
+						data-mdb-ripple-color="dark"
+						><i class="fab fa-linkedin"></i
+					></a>
+					<a
+						class="btn btn-link btn-floating btn-lg text-dark m-1"
+						href="#!"
+						role="button"
+						data-mdb-ripple-color="dark"
+						><i class="fab fa-github"></i
+					></a>
+				</section>
+			</div>
+			<div
+				class="text-center text-dark p-3"
+				style="background-color: rgba(0, 0, 0, 0.2)"
+			>
+				<p class="text-secondary">
 				This site was last updated on <span id="last-commit-date"></span>
 			</p>
+			</div>
+			
 		</div>
+		</footer>
+		<!-- #endregion -->
 
 		<!-- JavaScript Bundle with Popper -->
 		<script
@@ -445,6 +507,8 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+		<script src="./data/search.js"></script>
+		<script src="./data/projects.js"></script>
 		<script src="index.js"></script>
 	</body>
 </html>
