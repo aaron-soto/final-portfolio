@@ -22,3 +22,5 @@ fetch(portfolioRepoUrl)
 	.catch(function () {
 		console.log('Booo');
 	});
+
+// Handle confetti on button press
