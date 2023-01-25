@@ -33,7 +33,7 @@ a {
 	text-decoration: none;
 }
 a.primary {
-	color: #d44242;
+	color: #5928e5;
 	text-decoration: underline;
 }
 
@@ -52,7 +52,7 @@ a.primary {
 a span,
 .share-links a:hover,
 a:hover {
-	color: #d44242 !important;
+	color: #5928e5 !important;
 }
 
 p a:hover {
@@ -86,7 +86,7 @@ a {
 .btn:hover {
 	background-color: #e6e6e6;
 	border: 1px solid #e6e6e6;
-	color: #d44242;
+	color: #5928e5;
 }
 
 .container {
@@ -101,7 +101,7 @@ a {
 }
 
 blockquote {
-	border-left: 5px solid #d44242;
+	border-left: 5px solid #5928e5;
 	color: #545454;
 	margin: 1em 10px;
 	padding: 1rem 2rem;
@@ -151,7 +151,7 @@ blockquote p {
 	top: 0 !important;
 }
 .copy-to-clipboard-button {
-	background-color: #d44242 !important;
+	background-color: #5928e5 !important;
 	margin-right: 15px;
 	margin-top: 0.5em !important;
 	border-radius: 0 !important;
@@ -182,7 +182,7 @@ ol.breadcrumb {
 	border-radius: 0;
 }
 .info-banner {
-	background-color: #d44242;
+	background-color: #5928e5;
 	color: #f1f1f1;
 	line-height: 16px;
 }
@@ -190,7 +190,7 @@ ol.breadcrumb {
 	max-width: 80vw;
 }
 .card-tutorial {
-	border-left: 5px solid #d44242 !important;
+	border-left: 5px solid #5928e5 !important;
 }
 
 #search-window {
